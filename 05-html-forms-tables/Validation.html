@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+</head>
+
+<!-- 'name' attribute for passing the data, 'id' attribute - when click on label - it moves cursor to the field, 'required' attribute - to not let the field remain empty-->
+
+<body>
+    <h2>Validation Practice</h2>
+    <form action="/validation">
+        <p>
+            <label for="first_name">First name:</label>
+            <input type="text" name="first_name" id="first_name" placeholder="First Name" required>
+        </p>
+        <p>
+            <label for="username">User Name:</label>
+            <input type="text" name="username" id="username" placeholder="User Name" minlength="5" maxlength="15"
+                required>
+        </p>
+        <p>
+            <label for="email">Please enter your email:</label>
+            <input type="email" required name="email" id="email" placeholder="Email Address">
+        </p>
+
+        <label for="number">Enter Number</label>
+        <input type="number" name="number" id="number" min="5" max="25">
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

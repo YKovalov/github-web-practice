@@ -1,0 +1,39 @@
+/* h1 is a block element so takes the whole line space */
+/* with 'display' we can change this default behavior and set different like in the example */
+body {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+h1 {
+    background-color: yellow;
+    border: 1px solid black;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+/* span is an inline element so doesn't take the whole space */
+/* with 'display' we can change this default behavior and set different like in the example */
+
+span {
+    background-color: paleturquoise;
+    border: 1px solid black;
+    display: block;
+    margin-top: 20px;
+}
+
+#span1 {
+    background-color: palevioletred;
+    border: 1px solid black;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: olive;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 50px;
+}

@@ -1,0 +1,55 @@
+li {
+    color: blue;
+}
+
+.done {
+    color: grey;
+}
+
+#clear {
+    background-color: red;
+    color: white;
+}
+
+/* Descedant selector  */
+
+footer p {
+    color: brown;
+}
+
+/* Direct descendant */
+
+footer>a {
+    color: green;
+}
+
+/* Attribute Selector */
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+/* Pseudo Classes */
+
+a:hover {
+    color: orange;
+    text-decoration: overline;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+button:active {
+    background-color: blueviolet;
+}
+
+/* SPECIFICITY 
+!Important > Inline Styles (styling in .html doc, not in .css) > ID > Class > Element, there are specificity calculators that help to identify which one wins */
+
+/* !Important */
+#clear {
+    background-color: green !important;
+}
+
+/* Inheritance - some elements inherit styles automatically, some should be implicitly inherited*/

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables-practice</title>
+</head>
+
+<!-- 
+<table></table>  the basic table form
+<th></th>        the table header tag
+<tr></tr>       the table tow tag
+<td></td>       the table data tag (basically cell)   
+
+<thead></thead> semantic element
+<tbody></tbody> semantic element
+<tfoot></tfoot> semantic element
+ -->
+
+
+
+
+<body>
+    <h1>Heaviest Birds</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Animal</th>
+                <th>Weight</th>
+                <th>Flight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Ostrich</td>
+                <td>100</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>210</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Wild Turkey</td>
+                <td>120</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><b>Total</b></td>
+            </tr>
+        </tfoot>
+
+
+    </table>
+
+
+    <h2>V2</h2>
+    <table>
+
+        <thead>
+            <tr>
+                <th rowspan="2">Animal</th>
+                <th colspan="2">Average Mass</th>
+                <th>Flight</th>
+            </tr>
+
+            <tr>
+                <th>KG</th>
+                <th>LB</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>Ostrich</td>
+                <td>100</td>
+                <td>232</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Somali Ostrich</td>
+                <td>210</td>
+                <td>442</td>
+                <td>No</td>
+            </tr>
+
+            <tr>
+                <td>Wild Turkey</td>
+                <td>120</td>
+                <td>223</td>
+                <td>No</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td><b>Total</b></td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+
+
+</body>
+
+</html>

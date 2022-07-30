@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms-practice</title>
+</head>
+
+<body>
+
+    <h1>Forms Demo</h1>
+
+    <form action="/tacos">
+        <button type="button">Button that does not submit the form</button>
+        <p>
+            <label for="username">Enter a username: </label>
+            <input id="username" type="text" placeholder="username" name="user">
+        </p>
+
+        <p>
+            <label for="password">Enter a password: </label>
+            <input id="password" type="password" placeholder="password" name="pass">
+        </p>
+
+        <p>
+            <label for="color"> Enter a Color: </label>
+            <input type="color" name="color" id="color">
+        </p>
+
+        <p>
+
+            <label for="number">Enter a number: </label>
+            <input type="number" name="num" id="number" placeholder="enter a number" min="1" max="1000000000000000">
+        </p>
+
+        <button>Button that submits the form</button>
+        <p>
+            <button type="submit">Button that submits the form explicitly</button>
+        </p>
+        <p>
+            <input type="submit" value="Click me!">
+        </p>
+    </form>
+
+    <!-- button outside the form does NOTHING -->
+
+    <p><button>Submit</button></p>
+
+    <h2>Hijacking Searches</h2>
+
+    <h3>Search Reddit</h3>
+
+    <form action="https://www.reddit.com/search/?q=silkie">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+
+    <h3>Search Google</h3>
+
+    <form
+        action="https://www.google.com.ua/search?q=pizza&sxsrf=ALiCzsbFJp3Bwenka0m43ibls2ot5FMftw%3A1657139353489&source=hp&ei=mfDFYqyGHMKigQaQhYyQCA&iflsig=AJiK0e8AAAAAYsX-qU-J36QeyRTgyMV35jrDFQpqja-6&ved=0ahUKEwjstoaUjeX4AhVCUcAKHZACA4IQ4dUDCAc&uact=5&oq=pizza">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+
+    <h3>Search YouTube</h3>
+
+    <form action="https://www.youtube.com/results?search_query=by+%D0%B8%D0%BD%D0%B4%D0%B8%D1%8F">
+        <input type="text" name="search_query">
+        <button>Search Youtube</button>
+    </form>
+
+    <h3>More Inputs</h3>
+
+    <!-- Checkbox -->
+    <p>
+        <label for="Kill">Kill Everyone</label>
+        <input type="checkbox" id="Kill" name="Kill">
+    </p>
+    <p>
+        <label for="Mercy">Mercy For Everyone</label>
+        <input type="checkbox" id="Mercy" name="Mercy">
+    </p>
+
+
+    <form action="/birds">
+        <input type="checkbox" name="agree_tc" id="agree" checked>
+        <label for="agree">ACCEPT TERMS AND CONDITIONS</label>
+        <button>Submit TC</button>
+    </form>
+
+
+
+    <form action="/birds">
+
+        <!-- Radio -->
+        <p>
+            <input type="radio" name="choice_done" id="red" value="red">
+            <label for="red">Red</label>
+        </p>
+        <p>
+            <input type="radio" name="choice_done" id="black" value="black">
+            <label for="black">Black</label>
+        </p>
+        <p>
+            <input type="radio" name="choice_done" id="white" value="white">
+            <label for="white">White</label>
+        </p>
+
+        <!-- Select -->
+        <h2>Select menu</h2>
+        <select name="cars" id="cars-select">
+            <option value="">Choose a car you like</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="volkswagen">Volkswagen</option>
+
+        </select>
+        <p>
+            <input type="checkbox" name="agree_tc" id="agree" checked>
+            <label for="agree">ACCEPT TERMS AND CONDITIONS</label>
+        </p>
+
+        <label for="cheese">Amount of cheese</label>
+        <input type="range" id="cheese" min="1" max="10" name="cheese_level">
+        <p><button>Submit color</button></p>
+
+        <label for="request">Any special request:</label>
+        <br>
+        <textarea name="request" id="request" cols="40" rows="10" placeholder="type your text here"></textarea>
+
+    </form>
+</body>
+
+</html>

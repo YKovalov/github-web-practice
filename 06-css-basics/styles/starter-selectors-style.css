@@ -1,0 +1,42 @@
+/* Universal selector - selects everything */
+
+* {
+    color: aqua;
+    background-color: black;
+}
+
+/* Element selector */
+
+button {
+    font-size: 30px;
+}
+
+body {
+    background-color: #bc6c25;
+}
+
+/* Selector List  */
+
+h1,
+h2 {
+    color: green;
+}
+
+/* ID selector */
+
+#signup {
+    background-color: #fefae0;
+    color: #ffb703;
+}
+
+/* Class selector */
+
+span {
+    color: #f5cac3;
+}
+
+.tag {
+    background-color: #3a5a40;
+    color: #fee440;
+    font-size: 16px;
+}
