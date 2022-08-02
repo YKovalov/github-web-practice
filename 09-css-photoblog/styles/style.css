@@ -1,4 +1,20 @@
 img {
     width: 30%;
-    padding: 10px;
+/* 30% + 30% + 30% = 90 %
+100% - 90% = 10%
+10 % / 6 = 1.66666 % */
+    margin: 1.66666%;
+
+    /* margin: calc(10% / 6) another way */
+}
+
+nav {
+
+    text-transform: uppercase;
+    border-bottom: 2px solid #f1f1f1;
+    width: 30%;
+    margin-left: 1.66666%;
+    padding: 1.2em 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
 }
